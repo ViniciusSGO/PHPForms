@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+body h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0;
+    height: 60px;
+}
+
+body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 85vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body main div#colunas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+body main section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+}
+
+body main section form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body main section form label:not(.labelCheckBox, .labelRadio) {
+    font-weight: bold;
+}
+
+body main section form > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 0;
+}
+
+body main section form > div input:not(input[type=checkbox], input[type=radio]), select {
+    height: 45px;
+    padding: 0 10px;
+    font-size: 13px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+body main section form div#acoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+body main section form div#acoes input {
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    margin: 10px 5px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+body main section form div#acoes input:first-child {
+    background-color: #4c64ce;
+    color: white;
+}
+
+body main section form div#acoes input:first-child:hover {
+    transition: 0.5s;
+    background-color: #8599f1;
+    color: white;
+}
+
+body main section form div#acoes input:last-child {
+    transition: 0.5s;
+    background-color: #4c64ce28;
+    color: #4c64ce;
+}
+
+body main section form div#acoes input:last-child:hover {
+    transition: 0.5s;
+    background-color: #899ae628;
+    color: #4c64ce;
+}
+
+body main section#regrasValidacoes p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+body main section#regrasValidacoes ul {
+    margin: 5px 0 0 30px;
+}
+
+body main section#regrasValidacoes ul li {
+    margin: 10px 0;
+}
+
+body footer {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body footer a {
+    font-size: 15px;
+    margin: 0 15px;
+}
